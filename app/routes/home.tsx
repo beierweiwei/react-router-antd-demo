@@ -1,5 +1,14 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import { Home as _Home } from "../views/home/home";
+
+type Post = {
+  id: number;
+  content: string;
+  createAt: string;
+  updateAt: string;
+  author: string;
+  title: string;
+}
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -8,6 +17,12 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function Home() {
-  return <Welcome />;
+export async function clientLoader ({}: Route.ClientLoaderArgs) {
+  const res = await fetch('http://localhost:3001/posts')
+  const posts: Post[] = await res.json()
+  return posts
+}
+
+export default function Home({ loaderData}: Route.ComponentProps) {
+  return <_Home data={loaderData} />;
 }

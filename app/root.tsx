@@ -6,9 +6,12 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-
+import '@ant-design/v5-patch-for-react-19';
 import type { Route } from "./+types/root";
 import "./app.css";
+import { Button, ConfigProvider, Space } from 'antd';
+
+
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -25,6 +28,7 @@ export const links: Route.LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
+    
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
@@ -33,7 +37,22 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        {children}
+        {
+         <ConfigProvider
+          theme={{
+            token: {
+              // Seed Token，影响范围大
+              // colorPrimary: '#00b96b',
+              // borderRadius: 2,
+      
+              // 派生变量，影响范围小
+              // colorBgContainer: '#f6ffed',
+            },
+          }}
+         >
+            { children }
+         </ConfigProvider>
+         }
         <ScrollRestoration />
         <Scripts />
       </body>
