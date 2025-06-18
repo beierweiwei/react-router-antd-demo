@@ -6,5 +6,6 @@ export default [
         index("routes/home.tsx")
     ]),
     route("login", "routes/login.tsx"),
-    route("backend", "routes/backend.tsx")
+    route("backend", "routes/backend.tsx"),
+    route("posts/:id", "routes/post.tsx")
 ] satisfies RouteConfig;

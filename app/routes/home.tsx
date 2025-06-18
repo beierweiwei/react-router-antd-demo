@@ -1,14 +1,7 @@
 import type { Route } from "./+types/home";
-import { Home as _Home } from "../views/home/home";
+import { Home as _Home, type Post } from "../views/home/home";
 
-type Post = {
-  id: number;
-  content: string;
-  createAt: string;
-  updateAt: string;
-  author: string;
-  title: string;
-}
+
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -23,6 +16,6 @@ export async function clientLoader ({}: Route.ClientLoaderArgs) {
   return posts
 }
 
-export default function Home({ loaderData}: Route.ComponentProps) {
+export default function Home({ loaderData }: Route.ComponentProps) {
   return <_Home data={loaderData} />;
 }
