@@ -28,7 +28,7 @@ export const Login: React.FC = () => {
           const id = res[0].id;
           const encryptedId = btoa(`${id}${salt}`);
           setToken(encryptedId)
-          return navigate("/home")
+          return navigate("/backend");
         }
     })
   };

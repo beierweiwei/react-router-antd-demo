@@ -3,7 +3,6 @@ export type PostItem = {
   content: string;
 };
 export function Post(props: PostItem) {
-  console.log(props);
   const { title, content } = props;
   return (
     <div>

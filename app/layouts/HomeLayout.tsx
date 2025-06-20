@@ -1,34 +1,33 @@
 import React from 'react';
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
-import { Outlet } from 'react-router';
-import { navs } from '../../configs/index'
+import { Breadcrumb, Layout, Menu, Space, theme } from 'antd';
+import { Outlet, useNavigate } from 'react-router';
 import type { Route } from './+types/HomeLayout';
-import type { RouteConfig } from '@react-router/dev/routes';
+import { UserOutlined } from '@ant-design/icons';
 const { Header, Content, Footer } = Layout;
 
 type NavEntity = {
     title: string;
     id: number;
     name: string;
+    url: string;
 }
 
 export async function clientLoader({
     params,
   }: Route.ClientLoaderArgs) {
-    const res = await fetch(`http://localhost:3001/navs`);
+    const res = await fetch('http://localhost:3001/navs');
     let cates: NavEntity[] = await res.json();
     let rt = cates.map(({
-        name,
-        title
+        title,
+        url
     }) => {
         return {
-            key: name,
-            label: title
+            key: url,
+            label: title,
         }
     })
     return rt;
   }
-  
 
 const HomeLayout: React.FC<Route.ComponentProps> = (
     {loaderData}
@@ -36,7 +35,7 @@ const HomeLayout: React.FC<Route.ComponentProps> = (
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
-  console.log(loaderData)
+  const navigate = useNavigate();
   return (
     <Layout>
       <Header
@@ -54,9 +53,18 @@ const HomeLayout: React.FC<Route.ComponentProps> = (
           theme="dark"
           mode="horizontal"
           defaultSelectedKeys={['2']}
-          items={loaderData}
           style={{ flex: 1, minWidth: 0 }}
+          items={loaderData}
+          onClick={(e) => {
+            navigate(e.key);
+          }}
         />
+        <Space>
+          <a href='/backend'>
+            <UserOutlined style={{ fontSize: '20px', color: '#fff' }} />
+          </a>
+          <a href='/login'>登录</a>
+        </Space>
       </Header>
       <Content style={{ padding: '0 48px' }}>
         {/* <Breadcrumb style={{ margin: '16px 0' }}>

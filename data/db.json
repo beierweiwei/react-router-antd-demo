@@ -1,95 +1,115 @@
 {
-    "posts": [
-      {
-        "id": "1",
-        "title": "React Hooks指南",
-        "content": "## 使用useEffect管理副作用...",
-        "tags": ["前端", "React"],
-        "createdAt": "2025-05-15",
-        "updateAt": "2025-05-15"
-      },
-      {
-        "id": "2",
-        "title": "React Hooks指南",
-        "content": "## 使用useEffect管理副作用...",
-        "tags": ["前端", "React"],
-        "createdAt": "2025-05-15",
-        "updateAt": "2025-05-15"
-      },
-      {
-        "id": "3",
-        "title": "React Hooks指南",
-        "content": "## 使用useEffect管理副作用...",
-        "tags": ["前端", "React"],
-        "createdAt": "2025-05-15",
-        "updateAt": "2025-05-15"
-      },
-      {
-        "id": "4",
-        "title": "React Hooks指南",
-        "content": "## 使用useEffect管理副作用...",
-        "tags": ["前端", "React"],
-        "createdAt": "2025-05-15",
-        "updateAt": "2025-05-15"
-      }
-    ],
-    "users": [
-      {
-        "id": 1,
-        "username": "wangjunjie",
-        "password": "wjj123"
-      }
-    ],
-    "cates": [
-        {
-            "id": 1,
-            "key": "dev",
-            "title": "开发",
-            "count": 12,
-            "createAt": "2024-10-1",
-            "updateAt": "2024-10-1"
-        },
-        {
-            "id": 1,
-            "key": "dev",
-            "title": "开发",
-            "count": 12,
-            "createAt": "2024-10-1",
-            "updateAt": "2024-10-1"
-        },
-        {
-            "id": 1,
-            "key": "dev",
-            "title": "开发",
-            "count": 12,
-            "createAt": "2024-10-1",
-            "updateAt": "2024-10-1"
-        }
-    ],
-    "navs": [
-        {
-            "id": 1,
-            "title": "首页",
-            "name": "home",
-            "url": "/"
-        },
-        {
-            "id": 2,
-            "title": "分类",
-            "name": "cate",
-            "url": "/cate"
-        },
-        {
-            "id": 3,
-            "title": "归档",
-            "name": "archives",
-            "url": "/archives"
-        },
-        {
-            "id": 4,
-            "title": "about",
-            "name": "about",
-            "url": "/about"
-        }
-    ]
-  }
+  "posts": [
+    {
+      "id": "1",
+      "title": "React Hooks指南",
+      "content": "## 使用useEffect管理副作用...",
+      "tags": ["前端", "React"],
+      "createdAt": "2025-05-15",
+      "updateAt": "2025-05-15"
+    },
+    {
+      "id": "2",
+      "title": "React Hooks指南",
+      "content": "## 使用useEffect管理副作用...",
+      "tags": ["前端", "React"],
+      "createdAt": "2025-05-15",
+      "updateAt": "2025-05-15"
+    },
+    {
+      "id": "3",
+      "title": "React Hooks指南",
+      "content": "## 使用useEffect管理副作用...",
+      "tags": ["前端", "React"],
+      "createdAt": "2025-05-15",
+      "updateAt": "2025-05-15"
+    },
+    {
+      "id": "4",
+      "title": "React Hooks指南",
+      "content": "## 使用useEffect管理副作用...",
+      "tags": ["前端", "React"],
+      "createdAt": "2025-05-15",
+      "updateAt": "2025-05-15"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "wangjunjie",
+      "password": "wjj123"
+    }
+  ],
+  "cates": [
+    {
+      "id": 1,
+      "key": "dev",
+      "title": "开发",
+      "count": 12,
+      "createAt": "2024-10-1",
+      "updateAt": "2024-10-1"
+    },
+    {
+      "id": 1,
+      "key": "dev",
+      "title": "开发",
+      "count": 12,
+      "createAt": "2024-10-1",
+      "updateAt": "2024-10-1"
+    },
+    {
+      "id": 1,
+      "key": "dev",
+      "title": "开发",
+      "count": 12,
+      "createAt": "2024-10-1",
+      "updateAt": "2024-10-1"
+    }
+  ],
+  "navs": [
+    {
+      "id": 1,
+      "title": "首页",
+      "name": "home",
+      "url": "/home"
+    },
+    {
+      "id": 2,
+      "title": "分类",
+      "name": "cate",
+      "url": "/cate"
+    },
+    {
+      "id": 3,
+      "title": "归档",
+      "name": "archives",
+      "url": "/archives"
+    },
+    {
+      "id": 4,
+      "title": "about",
+      "name": "about",
+      "url": "/about"
+    }
+  ],
+  "backend_navs": [
+    {
+      "id": 1,
+      "title": "首页",
+      "name": "home",
+      "url": "/backend"
+    },
+    {
+      "id": 2,
+      "title": "文章管理",
+      "name": "cate",
+      "url": "/backend/posts"
+    },
+    {
+      "id": 3,
+      "title": "分类管理",
+      "name": "cate",
+      "url": "/backend/cates"
+    }
+  ]
+}
