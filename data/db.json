@@ -84,7 +84,10 @@
       "id": "11",
       "title": "React Hooks指南- 4Jg",
       "content": "## 使用useEffect管理副作用...",
-      "tags": ["前端", "React"],
+      "tags": [
+        "前端",
+        "React"
+      ],
       "createdAt": "2025-05-15",
       "updateAt": "2025-05-15"
     },
@@ -92,7 +95,10 @@
       "id": "12",
       "title": "React Hooks指南- 6X4",
       "content": "## 使用useEffect管理副作用...",
-      "tags": ["前端", "React"],
+      "tags": [
+        "前端",
+        "React"
+      ],
       "createdAt": "2025-05-15",
       "updateAt": "2025-05-15"
     },
@@ -100,7 +106,10 @@
       "id": "13",
       "title": "React Hooks指南- 3H6",
       "content": "## 使用useEffect管理副作用...",
-      "tags": ["前端", "React"],
+      "tags": [
+        "前端",
+        "React"
+      ],
       "createdAt": "2025-05-15",
       "updateAt": "2025-05-15"
     },
@@ -108,7 +117,10 @@
       "id": "14",
       "title": "React Hooks指南- 1V5",
       "content": "## 使用useEffect管理副作用...",
-      "tags": ["前端", "React"],
+      "tags": [
+        "前端",
+        "React"
+      ],
       "createdAt": "2025-05-15",
       "updateAt": "2025-05-15"
     },
@@ -116,7 +128,10 @@
       "id": "15",
       "title": "React Hooks指南- 9P2",
       "content": "## 使用useEffect管理副作用...",
-      "tags": ["前端", "React"],
+      "tags": [
+        "前端",
+        "React"
+      ],
       "createdAt": "2025-05-15",
       "updateAt": "2025-05-15"
     },
@@ -124,7 +139,10 @@
       "id": "16",
       "title": "React Hooks指南- 8X9",
       "content": "## 使用useEffect管理副作用...",
-      "tags": ["前端", "React"],
+      "tags": [
+        "前端",
+        "React"
+      ],
       "createdAt": "2025-05-15",
       "updateAt": "2025-05-15"
     },
@@ -132,7 +150,10 @@
       "id": "17",
       "title": "React Hooks指南- 4K4",
       "content": "## 使用useEffect管理副作用...",
-      "tags": ["前端", "React"],
+      "tags": [
+        "前端",
+        "React"
+      ],
       "createdAt": "2025-05-15",
       "updateAt": "2025-05-15"
     },
@@ -140,7 +161,10 @@
       "id": "18",
       "title": "React Hooks指南- 3L9",
       "content": "## 使用useEffect管理副作用...",
-      "tags": ["前端", "React"],
+      "tags": [
+        "前端",
+        "React"
+      ],
       "createdAt": "2025-05-15",
       "updateAt": "2025-05-15"
     },
@@ -163,32 +187,32 @@
   ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "wangjunjie",
       "password": "wjj123"
     }
   ],
   "navs": [
     {
-      "id": 1,
+      "id": "1",
       "title": "首页",
       "name": "home",
       "url": "/home"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "分类",
       "name": "cate",
       "url": "/cate"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "归档",
       "name": "archives",
       "url": "/archives"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "about",
       "name": "about",
       "url": "/about"
@@ -196,36 +220,39 @@
   ],
   "backend_navs": [
     {
-      "id": 1,
+      "id": "1",
       "title": "首页",
       "name": "home",
       "url": "/backend"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "文章管理",
       "name": "cate",
       "url": "/backend/posts"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "分类管理",
       "name": "cate",
       "url": "/backend/cates"
     }
   ],
   "cates": [
-    { "id": "1", "name": "技术", "slug": "tech" },
-    { "id": "2", "name": "生活", "slug": "life" },
-    { "id": "3", "name": "旅行", "slug": "travel" }
-  ]
-}
-     "url": "/backend/cates"
+    {
+      "id": "1",
+      "name": "技术",
+      "slug": "tech"
+    },
+    {
+      "id": "2",
+      "name": "生活",
+      "slug": "life"
+    },
+    {
+      "id": "3",
+      "name": "旅行",
+      "slug": "travel"
     }
-  ],
-  "cates": [
-    { "id": "1", "name": "技术", "slug": "tech" },
-    { "id": "2", "name": "生活", "slug": "life" },
-    { "id": "3", "name": "旅行", "slug": "travel" }
   ]
 }
